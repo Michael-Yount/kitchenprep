@@ -2,3 +2,17 @@ body {
     background-color: rgb(193, 201, 189);
     font-family: 'Times New Roman', Times, serif;
 }
+
+.container {
+    border: white;
+    padding: 3em;
+}
+
+.btn {
+    color: rgb(0, 75, 33);
+    background-color: rgb(225, 240, 253);
+}
+.prep-pad {
+    background-color: aliceblue;
+    
+}
