@@ -1,5 +1,6 @@
-import React from 'react'
-import "./styles.css"
+import React from 'react';
+import "./styles.css";
+import Preps from "./Preps";
 
 function BootstrapRowCol({ children }) {
   return (
@@ -11,15 +12,7 @@ function BootstrapRowCol({ children }) {
   );  
 }
 
-function Preps ({ preps }) {
-  return (
-    <div className='prep-pad'>
-    {
-    preps.length <= 0 ? <p>Add some preps</p> : preps.map((prep, index) => <p key={index}>{prep}</p>)
-    }
-    </div>
-  );
-}
+
 
 function App() {
  const [prepText, setPrepText] = React.useState('');
@@ -29,7 +22,9 @@ function App() {
   setPrepText(e.target.value);
  }
 
- 
+ function removePrep() {
+
+ }
 
  function submitPrep() {
   const newPreps = [...preps,prepText];
@@ -42,7 +37,7 @@ function App() {
     <div className="container text-center">
         <h1>Kitchen Prep</h1>
           <BootstrapRowCol>
-
+            <p>placeholder</p>
           </BootstrapRowCol>
           <BootstrapRowCol>
             <div className="input-group mb-3">
