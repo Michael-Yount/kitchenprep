@@ -12,8 +12,6 @@ function BootstrapRowCol({ children }) {
   );  
 }
 
-
-
 function App() {
  const [prepText, setPrepText] = React.useState('');
  const [preps, setPreps] = React.useState([]);
@@ -22,9 +20,11 @@ function App() {
   setPrepText(e.target.value);
  }
 
- function removePrep() {
-
- }
+ 
+  //let temp = [...preps];
+  //temp.slice(index, 1);
+  //setPreps(temp);
+// }
 
  function submitPrep() {
   const newPreps = [...preps,prepText];
